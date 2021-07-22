@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 .iz-container .content:before,
-.iz-container h1:before {
+.iz-container .header:before {
   position: absolute;
   pointer-events: none;
   content: "";
@@ -34,7 +34,7 @@
   border-width: 2px;
   border-style: solid;
 }
-.iz-container h1 {
+.iz-container .header {
   z-index: 2;
   position: relative;
   padding: calc(var(--padY) * 1.75) var(--padX) var(--padY) var(--padX);
@@ -46,7 +46,7 @@
   text-shadow: 0 0 2px rgb(var(--dark), 1);
   letter-spacing: 1px;
 }
-.iz-container h1:before {
+.iz-container .header:before {
   border-radius: var(--radius) var(--radius) 0 0;
   border-bottom: 0;
   bottom: 0;
