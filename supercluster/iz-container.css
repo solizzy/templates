@@ -45,6 +45,9 @@
   color: white;
   text-shadow: 0 0 2px rgb(var(--dark), 1);
   letter-spacing: 1px;
+  font-size: 1.7em;
+font-weight: bold;
+min-height: 2.4rem;
 }
 .iz-container .header:before {
   border-radius: var(--radius) var(--radius) 0 0;
