@@ -12,7 +12,8 @@
 }
 
 .iz-container {
-  max-width: 400px;
+  width: 80%;
+  max-width: 52ch;
   margin: 25px auto;
   --padX: 1.75rem;
   --padY: 1rem;
