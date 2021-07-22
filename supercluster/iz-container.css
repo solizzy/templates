@@ -1,11 +1,14 @@
 .izzy {
   --light: 242, 228, 148 !important;
   --dark: 207, 163, 60 !important;
+  --bgImage: url(https://img.nickpic.host/Sinsbb.png); 
+  --bgPosition: 100% 20%;"
 }
 
 .orion {
   --light: 188, 209, 188 !important;
   --dark: 151, 163, 134 !important;
+  --bgImage: url(https://img.nickpic.host/SiuYAe.png)
 }
 
 .iz-container {
@@ -41,6 +44,7 @@
   margin: 0;
   line-height: 1.5;
   background-image: linear-gradient(to bottom right, rgba(var(--dark), 0.7), rgba(var(--light), 0.7)), var(--bgImage, none);
+  background-position: var(--bgPosition, none);
   background-size: cover;
   color: white;
   text-shadow: 0 0 2px rgb(var(--dark), 1);
