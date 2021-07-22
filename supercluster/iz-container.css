@@ -94,6 +94,9 @@
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   line-height: 1.5;
   letter-spacing: 1px;
+  margin-left: calc(-1 * var(--inset));
+  margin-right: calc(-1 * var(--inset));
+  margin-top: 1.6em;
 }
 
 .iz-container h2:after,
