@@ -104,6 +104,7 @@ min-height: 2.4rem;
 }
 .iz-container .ooc {
   padding: var(--inset) var(--padX);
+  font-size: 0.8rem;
 }
 .iz-container .pkmn {
   margin-top: -12px;
