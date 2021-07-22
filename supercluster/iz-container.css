@@ -1,10 +1,8 @@
-// color variables
 .izzy {
-  --light: 242, 228, 148;
-  --dark: 207, 163, 60;
+  --light: 242, 228, 148 !important;
+  --dark: 207, 163, 60 !important;
 }
 
-// main template
 .iz-container {
   max-width: 400px;
   margin: 25px auto;
@@ -13,13 +11,14 @@
   --inset: 0.5rem;
   --radius: 10px;
 }
-.iz-container .main {
+.iz-container main {
   display: block;
   background: #fcfcfc;
   border-radius: calc(var(--radius) * 2);
   overflow: hidden;
 }
-.iz-container .content:before, .iz-container h1:before {
+.iz-container .content:before,
+.iz-container h1:before {
   position: absolute;
   pointer-events: none;
   content: "";
