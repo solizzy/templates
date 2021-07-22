@@ -3,6 +3,11 @@
   --dark: 207, 163, 60 !important;
 }
 
+.orion {
+  --light: 188, 209, 188 !important;
+  --dark: 151, 163, 134 !important;
+}
+
 .iz-container {
   max-width: 400px;
   margin: 25px auto;
@@ -56,7 +61,7 @@
   border-radius: 0 0 var(--radius) var(--radius);
   border-top: 0;
   top: 0;
-  border-color: rgb(var(--light));
+  border-color: rgba(var(--dark), 0.5);
 }
 .iz-container .content *:nth-child(1) {
   margin-top: 0;
