@@ -6,7 +6,7 @@
 }
 
 .orion {
-  --light: 188, 209, 188 !important;
+  --light: 213, 214, 182 !important;
   --dark: 151, 163, 134 !important;
   --bgImage: url(https://img.nickpic.host/SiuYAe.png)
 }
@@ -104,4 +104,25 @@ min-height: 2.4rem;
 }
 .iz-container .ooc {
   padding: var(--inset) var(--padX);
+}
+.iz-container .pkmn {
+  margin-top: -20px;
+}
+
+.iz-container pkmn {
+  position: relative;
+}
+
+.iz-container pkmn:before {
+content: '';
+background: white;
+display: block;
+top: 34%;
+left: 20%;
+position: absolute;
+border-radius: 100%;
+z-index: -1;
+width: 30px;
+height: 30px;
+background: rgba(var(--light), 0.8);
 }
