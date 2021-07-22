@@ -106,7 +106,8 @@ min-height: 2.4rem;
   padding: var(--inset) var(--padX);
 }
 .iz-container .pkmn {
-  margin-top: -20px;
+  margin-top: -12px;
+  margin-left: -10px;
 }
 
 .iz-container pkmn {
