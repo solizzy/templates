@@ -125,4 +125,5 @@ z-index: -1;
 width: 30px;
 height: 30px;
 background: rgba(var(--light), 0.8);
+box-shadow: 2px 2px 25px rgba(var(--dark), 0.5);
 }
