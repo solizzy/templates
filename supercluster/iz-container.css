@@ -1,0 +1,96 @@
+// color variables
+.izzy {
+  --light: 242, 228, 148;
+  --dark: 207, 163, 60;
+}
+
+// main template
+.iz-container {
+  max-width: 400px;
+  margin: 25px auto;
+  --padX: 1.75rem;
+  --padY: 1rem;
+  --inset: 0.5rem;
+  --radius: 10px;
+}
+.iz-container .main {
+  display: block;
+  background: #fcfcfc;
+  border-radius: calc(var(--radius) * 2);
+  overflow: hidden;
+}
+.iz-container .content:before, .iz-container h1:before {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+  top: var(--inset);
+  bottom: var(--inset);
+  left: var(--inset);
+  right: var(--inset);
+  border-width: 2px;
+  border-style: solid;
+}
+.iz-container h1 {
+  z-index: 2;
+  position: relative;
+  padding: calc(var(--padY) * 1.75) var(--padX) var(--padY) var(--padX);
+  margin: 0;
+  line-height: 1.5;
+  background-image: linear-gradient(to bottom right, rgba(var(--dark), 0.7), rgba(var(--light), 0.7)), var(--bgImage, none);
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 2px rgb(var(--dark), 1);
+  letter-spacing: 1px;
+}
+.iz-container h1:before {
+  border-radius: var(--radius) var(--radius) 0 0;
+  border-bottom: 0;
+  bottom: 0;
+}
+.iz-container .content {
+  z-index: 1;
+  position: relative;
+  display: block;
+  padding: var(--padY) var(--padX) calc(var(--padY) * 1.75) var(--padX);
+}
+.iz-container .content:before {
+  border-radius: 0 0 var(--radius) var(--radius);
+  border-top: 0;
+  top: 0;
+  border-color: rgb(var(--light));
+}
+.iz-container .content *:nth-child(1) {
+  margin-top: 0;
+}
+.iz-container .content *:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.iz-container h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: rgb(var(--dark));
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.iz-container h2:after, .iz-container h2:before {
+  content: "";
+  flex: 1;
+  display: block;
+  height: 1.5px;
+  background: rgba(var(--dark), 0.5);
+}
+.iz-container h2:before {
+  margin-right: var(--inset);
+}
+.iz-container h2:after {
+  margin-left: var(--inset);
+}
+.iz-container b {
+  color: rgb(var(--dark));
+  letter-spacing: 0.5px;
+}
+.iz-container .ooc {
+  padding: var(--inset) var(--padX);
+}
