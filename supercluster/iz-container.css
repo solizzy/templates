@@ -151,3 +151,8 @@
   background: rgba(var(--light), 0.8);
   box-shadow: 2px 2px 25px rgba(var(--dark), 0.5);
 }
+
+.iz-container pkmn.pokeball:before {
+background-image: url(//solizzy.github.io/templates/supercluster/pokeball.svg);
+background-size: cover;
+}
