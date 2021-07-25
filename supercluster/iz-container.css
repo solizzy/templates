@@ -153,6 +153,7 @@
 }
 
 .iz-container pkmn.pokeball:before {
-background-image: url(//solizzy.github.io/templates/supercluster/pokeball.svg);
-background-size: cover;
+  background-image: url(//solizzy.github.io/templates/supercluster/pokeball.svg);
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
