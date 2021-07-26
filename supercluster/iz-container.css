@@ -11,6 +11,12 @@
   --bgImage: url(https://img.nickpic.host/SiuYAe.png)
 }
 
+.veronica {
+  --light: 244, 184, 54 !important;
+  --dark: 224, 89, 31 !important;
+  --bgImage: url(https://img.nickpic.host/S4XK1d.png);
+}
+
 .iz-container {
   width: 80%;
   max-width: 52ch;
