@@ -102,7 +102,7 @@
       )
       .join("")}`
       )
-      .join("")};
+      .join("")}
     `;
 
       el.querySelector(".content").insertAdjacentHTML("beforeend", template);
