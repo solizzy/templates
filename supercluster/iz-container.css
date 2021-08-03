@@ -163,3 +163,20 @@
   background-size: cover;
   background-blend-mode: soft-light;
 }
+
+/* FOR THREAD TRACKERS */
+
+.iz-threads thread {
+  display: block;
+  width: max-content;
+  margin: 5px 0;
+}
+
+.iz-threads thread.complete {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.iz-threads thread.ongoing {
+  font-weight: bolder;
+}
