@@ -158,6 +158,19 @@
   box-shadow: 2px 2px 25px rgba(var(--dark), 0.5);
 }
 
+.iz-container pkmn:after {
+  content: attr(data-hp);
+  position: absolute;
+  font-size: 11px;
+  color: rgb(85, 85, 85);
+  mix-blend-mode: multiply;
+  text-align: center;
+  bottom: -1em;
+  left: 0;
+  right: 9px;
+  text-shadow: 0 0 2px rgb(var(--light));
+}
+
 .iz-container pkmn.pokeball:before {
   background-image: url(//solizzy.github.io/templates/supercluster/pokeball.svg);
   background-size: cover;
