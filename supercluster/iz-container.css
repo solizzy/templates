@@ -193,3 +193,15 @@
 .iz-threads thread.ongoing {
   font-weight: bolder;
 }
+
+.iz-threads thread[title] {
+  content: '';
+  display: inline-block;
+  background-image: url(https://solizzy.github.io/templates/supercluster/pokeball.svg);
+  background-color: rgb(var(--dark));
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  margin: 0 0.3em 0 -1.3em;
+  transform: translateY(3px);
+}
