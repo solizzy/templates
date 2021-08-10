@@ -194,7 +194,7 @@
   font-weight: bolder;
 }
 
-.iz-threads thread[title] {
+.iz-threads thread[title]::before {
   content: '';
   display: inline-block;
   background-image: url(https://solizzy.github.io/templates/supercluster/pokeball.svg);
