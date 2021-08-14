@@ -213,7 +213,7 @@
   --radius: 10px;
   border-radius: var(--radius);
   position: relative;
-  margin: auto;
+  margin: 1.5rem auto;
   width: 100%;
   max-width: calc(var(--widthMsg) * 1.25);
   padding-bottom: 0.1px;
@@ -223,9 +223,9 @@
   display: block;
   color: #fcfcfc;
   text-shadow: 0 0 2px rgb(var(--light));
-  font-size: 1.2em;
+  font-size: 1.35em;
   letter-spacing: 1px;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1.4rem 1rem 1rem 1rem;
   border-radius: var(--radius) var(--radius) 0 0;
   position: relative;
   font-weight: bold;
@@ -238,7 +238,7 @@
 .iz-phone messages {
   display: block;
   margin: 3px;
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
   border-radius: calc(var(--radius) *0.8);
   background-color: #fcfcfc;
 }
