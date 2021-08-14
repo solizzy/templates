@@ -205,3 +205,65 @@
   margin: 0 0.3em 0 -1.3em;
   transform: translateY(3px);
 }
+
+/* FOR PHONE THREADS */
+
+.iz-phone {
+  --widthMsg: 35ch;
+  --radius: 10px;
+  border-radius: var(--radius);
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: calc(var(--widthMsg) * 1.25);
+  padding-bottom: 0.1px;
+}
+
+.iz-phone contact {
+  display: block;
+  color: #fcfcfc;
+  text-shadow: 0 0 2px rgb(var(--light));
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  position: relative;
+}
+
+.iz-phone, .izphone contact {
+  background-image: linear-gradient(to bottom right, rgba(var(--dark), 1), rgba(var(--light), 1));
+}
+
+.iz-phone messages {
+  display: block;
+  margin: 3px;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: calc(var(--radius) *0.8);
+  background-color: #fcfcfc;
+}
+
+.iz-phone messages > * {
+  --bg: rgba(var(--light), 0.6);
+  display: block;
+  box-sizing: border-box;
+  max-width: min(80%, var(--widthMsg));
+  margin: 0.8rem 0 0.8rem auto;
+  border-radius: var(--radius) 0 var(--radius) var(--radius);
+}
+
+.iz-phone messages > *.from {
+  --bg: rgb(233, 233, 233);
+  margin: 0.25rem auto 0.25rem 0;
+  border-radius: 0 var(--radius) var(--radius) var(--radius);
+}
+
+.iz-phone message {
+  display: block;
+  background-color: var(--bg);
+  padding: calc(var(--radius) * 1.2);
+  width: max-content;
+}
+
+.iz-phone .emoji {
+  max-width: calc(var(--widthMsg) * 0.5);
+}
