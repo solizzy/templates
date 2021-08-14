@@ -66,7 +66,7 @@
       }
 
       if (!(chara in acc)) {
-        acc[chara] = {};
+        acc[chara] = { Past: [] };
       }
 
       if (!(timeline in acc[chara])) {
@@ -89,13 +89,16 @@
       let totalThreads = 0;
 
       const template = `
-    ${Object.entries(threads[char]).map(([title, threads]) => `<h2>${title}</h2>
+    ${Object.entries(threads[char]).map(([title, threads]) => { 
+      if (threads.length === 0) return "";
+        
+      return `<h2>${title}</h2>
     ${threads.map(thread => { 
       totalThreads++;
       if (thread.status.toLowerCase() === "ongoing") ongoingThreads++;
       
       return `<thread class="${thread.status.toLowerCase()}" ${thread.notes ? `title="${thread.notes}"` : ``}><a href="${thread.url}">${thread.title}</a> ${thread.participants ? `with ${thread.participants.toLowerCase()}` : ""}</thread>` }).join("")}`).join("")}
-    `
+    `}
 
       el.querySelector(".content").insertAdjacentHTML("beforeend", template);
 
