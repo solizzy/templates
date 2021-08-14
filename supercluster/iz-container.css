@@ -247,7 +247,7 @@
   --bg: rgba(var(--light), 0.6);
   display: block;
   box-sizing: border-box;
-  max-width: min(80%, var(--widthMsg));
+  max-width: min(88%, var(--widthMsg));
   margin: 0.8rem 0 0.8rem auto;
   border-radius: var(--radius) 0 var(--radius) var(--radius);
 }
