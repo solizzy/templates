@@ -209,7 +209,7 @@
 /* FOR PHONE THREADS */
 
 .iz-phone {
-  --widthMsg: 35ch;
+  --widthMsg: 32ch;
   --radius: 10px;
   border-radius: var(--radius);
   position: relative;
