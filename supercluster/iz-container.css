@@ -266,5 +266,5 @@
 }
 
 .iz-phone .emoji {
-  max-width: calc(var(--widthMsg) * 0.5);
+  max-width: min(80%, var(--widthMsg), 100px);
 }
