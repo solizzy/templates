@@ -59,11 +59,12 @@
       let [url, title, participants, notes, timeline, status, chara] =
         currentThread;
 
-      chara = chara.toLowerCase();
-
-      if (!url) {
+      
+      if (!url || !chara ) {
         return acc;
       }
+      
+      chara = chara.toLowerCase();
 
       if (!(chara in acc)) {
         acc[chara] = { Past: [] };
