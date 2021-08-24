@@ -111,3 +111,13 @@
 
   getThreads();
 })();
+
+/* 
+html looks like:
+  <article class="iz-threads iz-container orion" data-char="orion">
+    <main class="main">
+      <div class="header"> </div>
+      <div class="content"> </div>
+    </main>
+  </article>
+*/
