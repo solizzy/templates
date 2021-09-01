@@ -38,17 +38,17 @@ izzy-tracker .content::-webkit-scrollbar-thumb:active {
   background: #b3b3b3;
 }
 izzy-tracker .content > h1 {
-  margin-top: 0;
   position: sticky;
   top: 0;
   background: var(--bg);
-  padding-block: 5px;
+  padding: 0.6em 0;
+  margin: 0;
   font-size: 1rem;
 }
 izzy-tracker .answers {
   white-space: pre-line;
   margin-left: 1em;
-  margin-top: -2em;
+  margin-top: -1em;
   line-height: 1.5;
 }
 izzy-tracker .threads section {
