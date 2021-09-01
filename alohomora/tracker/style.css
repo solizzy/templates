@@ -12,6 +12,9 @@ izzy-tracker .trackerBox > h1 {
   margin: 0;
   padding: 10px;
 }
+izzy-tracker .trackerBox:nth-child(2) > h1 {
+  text-align: right;
+}
 izzy-tracker .content {
   overflow: auto;
   max-height: 50vh;
