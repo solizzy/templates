@@ -68,7 +68,7 @@ izzy-tracker .threadAct {
 }
 izzy-tracker .threadList {
   margin-left: 10px;
-  border-left: 2px solid pink;
+  border-left: 2px solid var(--group1-rgb, gray);
   flex: 1;
 }
 izzy-tracker thread {
