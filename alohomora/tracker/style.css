@@ -16,7 +16,8 @@ izzy-tracker .trackerBox:nth-child(2) > h1 {
   text-align: right;
 }
 izzy-tracker .content {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: 50vh;
   scrollbar-width: thin;
   border: 10px solid var(--bg);
@@ -66,19 +67,29 @@ izzy-tracker .threadAct {
   font-size: 0.9rem;
 }
 izzy-tracker .threadList {
-  padding-left: 10px;
   margin-left: 10px;
   border-left: 2px solid pink;
   flex: 1;
 }
 izzy-tracker thread {
   display: block;
-  -webkit-margin-after: 1em;
-  margin-block-end: 1em;
+  padding: 0.5em 0.4em 0.5em 1em;
+  transition: background 0.1s;
+  position: relative;
+  background: rgba(255,255,255,0);
+}
+izzy-tracker thread:hover {
+  background: rgba(255,255,255,0.4);
 }
 izzy-tracker thread a {
   font-weight: bold;
   display: block;
+}
+izzy-tracker thread a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 izzy-tracker thread p {
   margin: 0;
