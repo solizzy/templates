@@ -86,6 +86,16 @@ izzy-tracker thread a {
   display: block;
   text-transform: lowercase;
 }
+
+izzy-tracker :is(.complete, .dropped) {
+  filter: grayscale(1);
+  font-style: italic;
+}
+
+izzy-tracker .dropped {
+  text-decoration: line-through;
+}
+
 izzy-tracker thread a::after {
   content: '';
   display: block;
