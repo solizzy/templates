@@ -84,6 +84,7 @@ izzy-tracker thread:hover {
 izzy-tracker thread a {
   font-weight: bold;
   display: block;
+  text-transform: lowercase;
 }
 izzy-tracker thread a::after {
   content: '';
