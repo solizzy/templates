@@ -1,0 +1,65 @@
+izzy-tracker {
+  --bg: hsl(0, 0%, 98%);
+  display: grid;
+  background: var(--bg);
+  padding: 30px;
+  gap: 30px;
+  grid-template-columns: 3fr 4fr;
+  box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+}
+izzy-tracker .trackerBox > h1 {
+  margin: 0;
+  padding: 10px;
+}
+izzy-tracker .content {
+  overflow: auto;
+  max-height: 50vh;
+  scrollbar-width: thin;
+  border: 10px solid var(--bg);
+}
+izzy-tracker .content::-webkit-scrollbar {
+  width: 8px;
+}
+izzy-tracker .content::-webkit-scrollbar-track {
+  background: #ededed;
+}
+izzy-tracker .content::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+izzy-tracker .content::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+izzy-tracker .content::-webkit-scrollbar-thumb:active {
+  background: #b3b3b3;
+}
+izzy-tracker .content h1 {
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  padding-block: 10px;
+  font-size: 1.17em;
+}
+izzy-tracker .answers {
+  white-space: pre-line;
+  margin-left: 1em;
+  margin-top: -2.5em;
+  line-height: 1.5;
+}
+izzy-tracker .threads section {
+  display: flex;
+  margin-bottom: 2em;
+}
+izzy-tracker .threadAct {
+  width: 5ch;
+  text-align: right;
+  line-height: 1;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+}
+izzy-tracker .threadList {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 2px solid pink;
+}
