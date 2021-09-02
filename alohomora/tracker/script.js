@@ -104,7 +104,7 @@
 
           return `<thread class="${thread.status.toLowerCase()}">
           <a href="${thread.url}">${thread.title}</a>
-          <p>${thread.participants ? ` with ${thread.participants.toLowerCase()}` : ""}${thread.location ? ` @ ${thread.location.toLowerCase()}` : ""}${thread.notes ? ` (${thread.notes})` : ``}</p>
+          <p>${[thread.participants ? `with ${thread.participants.toLowerCase()}` : "", thread.location ? `at ${thread.location.toLowerCase()}` : "", thread.notes ? `(${thread.notes})` : ``].join(" - ")}</p>
           </thread>`
         }).join("")}
         </div>
@@ -120,3 +120,4 @@
 
   document.addEventListener('DOMContentLoaded', getThreads);
 })();
+
