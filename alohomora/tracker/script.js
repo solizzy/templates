@@ -56,7 +56,7 @@
     } */
 
     return threads.reduce((acc, currentThread) => {
-      let [url, title, participants, notes, timeline, status, chara] =
+      let [url, title, participants, location, notes, timeline, status, chara] =
         currentThread;
 
 
@@ -74,7 +74,7 @@
         acc[chara][timeline] = [];
       }
 
-      acc[chara][timeline].push({ url, title, participants, notes, status });
+      acc[chara][timeline].push({ url, title, participants, notes, status, location });
 
       return acc;
     }, {});
@@ -102,7 +102,7 @@
 
           return `<thread class="${thread.status.toLowerCase()}">
           <a href="${thread.url}">${thread.title}</a>
-          <p>${thread.participants ? `with ${thread.participants.toLowerCase()}` : ""}${thread.notes ? ` || ${thread.notes}` : ``}</p>
+          <p>${thread.participants ? `with ${thread.participants.toLowerCase()}` : ""}${thread.location ? `at ${thread.location.toLowerCase()}` : ""}${thread.notes ? ` (${thread.notes})` : ``}</p>
           </thread>`
         }).join("")}
         </div>
