@@ -2,7 +2,9 @@
   async function getThreads() {
     const sheetid = "1i7n16UutWosVtHLkEFEkAdswAv0xIyrO1GuVdyyW6kM";
     const queryparameters = "A2:H";
-    const apikey = "AIzaSyD7Vot4tg6peI_uUkHh8E-Fdzqjbq1BTkI";
+    const apikey = "AIzaSyBmN9-hpKVcVJ5KGgCD_9fXtqRAIIIj9ok"; 
+    // update api permissions at https://console.cloud.google.com/
+    
     const cache = cacheThreads();
 
     let threads = cache.get();
