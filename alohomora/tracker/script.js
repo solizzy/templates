@@ -109,12 +109,12 @@
         }).join("")}
         </div>
         </section>`
-      }).join("")
+      }).reverse().join("")
         }`
 
       el.querySelector(".threads").insertAdjacentHTML("beforeend", template);
 
-      el.querySelector(".trackerBox:nth-child(2) > h1").textContent = `Threads: ${ongoingThreads} / ${totalThreads}`
+      el.querySelector(".tb-threads h1").textContent = `Threads: ${ongoingThreads} / ${totalThreads}`
     });
   }
 
