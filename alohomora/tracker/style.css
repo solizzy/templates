@@ -3,7 +3,7 @@ izzy-tracker {
   display: grid;
   background: var(--bg);
   padding: 20px;
-  margin: 40px;
+  margin: 25px;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
