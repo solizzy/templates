@@ -51,6 +51,7 @@
   display: none;
 }
 .izzy.plotter .content h1 {
+  color: var(--color, inherit);
   margin-block: 0;
 }
 .izzy.plotter .content h1 + p {
@@ -59,10 +60,11 @@
 .izzy.plotter .content .text {
   border: 1.25em solid var(--bg);
   max-height: 300px;
-  outline: 1px solid #cccccc;
+  outline: 1px solid var(--color, #c0c0c0);
   overflow-y: auto;
   padding-inline-end: 10px;
   scrollbar-width: thin;
+  scrollbar-color: var(--color, #c0c0c0) rgba(0,0,0, 0.02);
 }
 .izzy.plotter .content .text p:nth-child(1) {
   margin-block-start: 0;
