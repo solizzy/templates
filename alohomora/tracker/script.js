@@ -98,7 +98,7 @@
         return `<section>
         <h1 class="threadAct">${title}</h1>
         <div class="threadList">
-          ${threads.map(thread => {
+          ${threads.reverse().map(thread => {
           totalThreads++;
           if (thread.status.toLowerCase() === "ongoing") { ongoingThreads++; }
 
