@@ -53,24 +53,27 @@ izzy-tracker .answers {
   margin-top: -1em;
   line-height: 1.5;
 }
+izzy-tracker .threads {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 2em 10px;
+}
 izzy-tracker .threads section {
-  display: flex;
+  display: contents;
 }
 izzy-tracker .threadAct {
   position: sticky;
   top: 0;
-  width: 5ch;
   text-align: right;
   line-height: 1;
   align-self: start;
-  margin: 0.6em 0;
+  margin: 0.6em;
   padding: 0;
-  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
 }
 izzy-tracker .threadList {
-  margin-left: 10px;
-  border-left: 2px solid var(--group1-rgb, gray);
-  flex: 1;
+  border-left: 2px solid var(--main, gray);
 }
 izzy-tracker thread {
   display: block;
