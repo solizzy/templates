@@ -3,6 +3,8 @@ const targets = $(".index button").get().map( el => el.dataset.for );
 
 if (targets.includes(hash)) {
 	toggleItem(hash);
+	const position = $(".izzy.plotter").parents(".basic-post").offset().top - 70;
+	$('html, body').scrollTop( position )
 }
 
 $(".izzy.plotter").on("click", ".index button", function() {
