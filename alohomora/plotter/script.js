@@ -3,7 +3,7 @@ const targets = $(".index button").get().map( el => el.dataset.for );
 
 if (targets.includes(hash)) {
 	toggleItem(hash);
-	const position = $(".izzy.plotter").parents(".basic-post").offset().top - 70;
+	const position = $(".izzy.plotter") - 130;
 	$('html, body').scrollTop( position )
 }
 
