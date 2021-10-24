@@ -47,17 +47,21 @@ function postTemplateButtons() {
 
       if (tags.size === 0) return "@[tag]"
 
-      return [...tags].join(" & ");
+      return [...tags].join(" ");
     })();
 
     const textArea = document.querySelector(".textinput");
+
+    const ooc = (() => textArea.value.match(/\/\/ (.*)/i)?.[1] )();
+
     textArea.value = `[default]${textArea.value
       .replace(/\*\*\*(.*?)\*\*\*/gi, `[b][i]$1[/i][/b]`) /* bold italics */
       .replace(/\*\*(.*?)\*\*/gi, `[b]$1[/b]`) /* bold */
       .replace(/\*(.*?)\*/gi, `[i]$1[/i]`) /* italics */
       .replace(/\_(.*?)\_/gi, `[u]$1[/u]`) /* underline */
-      .replace(/(\d+d\d+([+-]\d+)?)/gi, `[roll]$1[/roll]`) /* dice roll */
-      .trim()}\n\n[dohtml]<hr>[/dohtml]\n${tags}[/default]`;
+      .replace(/\[(\d+d\d+([+-]\d+)?)\]/gi, `[roll]$1[/roll]`) /* dice roll */
+      .replace(/\/\/(.*)/gi, ``) /* ooc notes */
+      .trim()}\n\n[dohtml]<hr>[/dohtml]\n${tags}${ooc ? `\n\n${ooc}` : ''}[/default]`;
   }
 
   container.append(`<input type="button" class="forminput" name="iz-templateify" value="Template-ify!" style="background: #dc6a6a">`)
